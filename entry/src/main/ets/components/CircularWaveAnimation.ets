@@ -1,5 +1,5 @@
-import { ArcButton, ArcButtonOptions, ArcButtonPosition } from "@ohos.arkui.advanced.ArcButton";
-import CircularWaveVM from "../viewmodel/CircularWaveVM";
+import { ArcButton, ArcButtonOptions, ArcButtonPosition } from '@ohos.arkui.advanced.ArcButton';
+import CircularWaveVM from '../viewmodel/CircularWaveVM';
 
 @Component
 export struct CircularWaveAnimation {

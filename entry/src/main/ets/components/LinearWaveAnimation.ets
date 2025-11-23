@@ -1,5 +1,5 @@
-import { ArcButton, ArcButtonOptions, ArcButtonPosition } from "@ohos.arkui.advanced.ArcButton";
-import WaveVM from "../viewmodel/WaveVM";
+import { ArcButton, ArcButtonOptions, ArcButtonPosition } from '@ohos.arkui.advanced.ArcButton';
+import WaveVM from '../viewmodel/WaveVM';
 
 @Component
 export struct LinearWaveAnimation {
