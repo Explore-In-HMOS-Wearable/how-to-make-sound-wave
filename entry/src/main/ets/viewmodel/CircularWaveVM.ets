@@ -1,3 +1,5 @@
+import getRandomValue from '../utils/getRandomValue';
+
 @Observed
 export default class CircularWaveVM {
   context: CanvasRenderingContext2D = new CanvasRenderingContext2D();
@@ -37,7 +39,7 @@ export default class CircularWaveVM {
   }
 
   random() {
-    this.waveData = new Array(this.maxNumPoints).fill(0).map(() => Math.random() * this.maxValue);
+    this.waveData = new Array(this.maxNumPoints).fill(0).map(() => getRandomValue() * this.maxValue);
     this.draw();
   }
 

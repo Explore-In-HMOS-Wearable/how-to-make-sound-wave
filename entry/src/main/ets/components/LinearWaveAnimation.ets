@@ -1,4 +1,5 @@
 import { ArcButton, ArcButtonOptions, ArcButtonPosition } from '@ohos.arkui.advanced.ArcButton';
+import getRandomValue from '../utils/getRandomValue';
 import WaveVM from '../viewmodel/WaveVM';
 
 @Component
@@ -15,7 +16,7 @@ export struct LinearWaveAnimation {
           this.waveVm.start()
 
           this.intervalId = setInterval(() => {
-            this.waveVm.addData(Math.random() * 100)
+            this.waveVm.addData(getRandomValue() * 100)
           }, 100)
         })
 
@@ -40,7 +41,7 @@ export struct LinearWaveAnimation {
                 this.waveVm.mode = 'live'
                 this.waveVm.clear()
                 this.intervalId = setInterval(() => {
-                  this.waveVm.addData(Math.random() * 100)
+                  this.waveVm.addData(getRandomValue() * 100)
                 }, 100)
               }
             }

@@ -7,7 +7,7 @@ This codelab shows how to create linear and circular sound wave animations.
 # Preview
 
 <div>
-  <img src="media/11.gif" width="25%">
+  <img src="screenshots/11.gif" width="25%">
 </div>
 
 # Use Cases

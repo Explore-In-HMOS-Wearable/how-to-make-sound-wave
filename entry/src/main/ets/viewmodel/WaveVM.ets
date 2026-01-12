@@ -1,3 +1,5 @@
+import getRandomValue from '../utils/getRandomValue';
+
 @Observed
 export default class WaveVM {
   context: CanvasRenderingContext2D = new CanvasRenderingContext2D()
@@ -36,7 +38,7 @@ export default class WaveVM {
   }
 
   random() {
-    this.waveData = new Array(this.maxNumRect).fill(0).map(() => Math.random() * this.maxValue)
+    this.waveData = new Array(this.maxNumRect).fill(0).map(() => getRandomValue() * this.maxValue)
     this.draw()
   }
 
